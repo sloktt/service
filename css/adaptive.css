@@ -1,0 +1,225 @@
+@media (max-width: 1230px){
+    .logo__img{
+        margin-top: 5px;
+    }
+    .logo__img img{
+        height: 60px;
+        width: 60px;
+    }
+    .logo__text span{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .logo__text{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .menu{
+        margin-right: 0;
+    }
+    .menu__link{
+        margin-right: 25px;
+    }
+}
+
+
+
+@media (max-width: 990px){
+    .header__logo{
+        margin-right: 25px;
+    }
+    .logo__img{
+        display: none;
+    }
+    .logo__text{
+        margin-left: 15px;
+    }
+    .menu{
+        padding-left: 0;
+    }
+    .menu__link{
+        margin-right: 15px;
+    }
+    .slider__img{
+        height: 450px;
+    }
+    .slider__title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .slider__text{
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header{
+        padding-bottom: 10px;
+    }
+    .header .container{
+        padding: 0;
+    }
+    .header__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 70px 0px 0px 0;
+        transition: all .3s ease 0s;
+        overflow: auto;
+        z-index: 2;
+        align-items: flex-start;
+    }
+    .header__menu.active{
+        top: 0;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .menu li{
+        padding-bottom: 15px;
+        font-size: 28px;
+    }
+    .header__btn-menu {
+        display: block;
+        position: fixed;
+        top: 35px;
+        right: 25px;
+        width: 45px;
+        height: 32px;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+    }
+    .header__btn-menu span{
+        position: absolute;
+        background-color: #fff;
+        width: 35px;
+        left: 5px;
+        height: 2px;
+        top: 15px;
+        transition: all .3s ease 0s;
+    }
+    .header__btn-menu:before,
+    .header__btn-menu:after{
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 35px;
+        height: 2px;
+        left: 5px;
+        transition: all .3s ease 0s;
+    }
+    .header__btn-menu:before{
+        top: 7px;
+    }
+    .header__btn-menu:after{
+        bottom: 7px;
+    }
+    .header__btn-menu.active span{
+        transform: scale(0);
+    }
+    .header__btn-menu.active:before{
+        transform: rotate(45deg);
+        top: 14px;
+    }
+    .header__btn-menu.active:after{
+        transform: rotate(-45deg);
+        bottom: 15px;
+    }
+    .slider__item{
+        position: relative;
+        height: 450px;
+    }
+    .slider__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .slider__content{
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        text-align: left;
+    }
+    .slider__title{
+        font-weight: 700;
+    }
+
+
+    .services__item-img img{
+        width: 100px;
+    }
+    .services__item-text{
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 5px;
+        margin: 0;
+    }
+
+
+    .videos__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contacts__items{
+        padding-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .contacts__map {
+        width: 100%;
+    }
+    .contacts__text{
+        width: 100%;
+    }
+    .contacts__adress p,.contacts__clocks p{
+        margin: 5px;
+    }
+}
+
+
+
+@media (max-width: 560px){
+    h2{
+        font-size: 30px;
+    }
+    .services__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .questions{
+        padding-top: 40px;
+    }
+    .questions__items{
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .videos__items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+    }
+    .contacts__text{
+        padding-left: 0;
+    }
+}
