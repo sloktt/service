@@ -6,7 +6,7 @@ html{
 }
 body{
     font-family: 'Ubuntu', sans-serif;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
@@ -17,6 +17,7 @@ body{
 }
 a{
     text-decoration: none;
+    display: inline-block;
 }
 li{
     list-style: none;
@@ -330,7 +331,11 @@ h2{
 }
 .contacts__text {
     padding: 15px 30px;
+    line-height: 32px;
     width: 45%;
+}
+.contacts__text p{
+    margin: 0;
 }
 .contacts__adress,.contacts__clocks,.contacts__tel{
     padding-top: 15px;
@@ -341,15 +346,12 @@ h2{
     font-size: 18px;
 }
 .contacts__adress span,.contacts__clocks span,.contacts__tel span{
+    display: inline-block;
     font-size: 22px;
-}
-.contacts__tel span{
-    display: block;
 }
 .contacts__phone{
     text-decoration: underline;
     color: rgb(0, 55, 236);
-    line-height: 42px;
 }
 
 
