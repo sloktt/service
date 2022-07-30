@@ -65,6 +65,9 @@
     .header .container{
         padding: 0;
     }
+    .logo__img{
+        display: block;
+    }
     .header__menu{
         position: fixed;
         top: -100%;
@@ -221,5 +224,19 @@
     }
     .contacts__text{
         padding-left: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .header__logo{
+        margin-right: 10px;
+    }
+    .logo__text{
+        margin-left: 0;
+        font-size: 22px;
+    }
+    .logo__img{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
