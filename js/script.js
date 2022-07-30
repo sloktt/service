@@ -25,3 +25,8 @@ $('.header__btn-menu').click(function(event){
   $('.header__btn-menu,.header__menu').toggleClass('active');
   $('body').toggleClass('lock');
 });
+
+$('.menu__link').click(function(event){
+  $('.header__btn-menu,.header__menu').removeClass('active');
+  $('body').removeClass('lock');
+});
