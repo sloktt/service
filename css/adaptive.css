@@ -23,12 +23,6 @@
 }
 
 
-@media(max-width: 1054px){
-    .videos__items{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 
 @media (max-width: 990px){
     .header__logo{
@@ -203,13 +197,6 @@
     }
 }
 
-
-
-@media (max-width: 705px){
-    .videos__items{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
 
 @media (max-width: 560px){
