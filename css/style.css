@@ -257,18 +257,23 @@ h2{
     display: block;
 }
 .videos__preview{
-    background-image: url(../img/video_preview.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 150px;
+    background: linear-gradient(135deg, #0094d2, #0031d2);
 }
 .videos__play{
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.videos__play-preview{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 .videos__play-btn{
     background-image: url(../img/video_play.png);
@@ -277,6 +282,7 @@ h2{
     width: 30px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
 }
 .videos__play:hover .videos__play-btn{
     background-position-y: -30px;
