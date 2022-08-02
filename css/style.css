@@ -329,8 +329,15 @@ h2{
     justify-content: space-between;
     padding-top: 40px;
 }
-.contacts__map {
+/* .contacts__map {
     width: 55%;
+} */
+.map.container-fluid {
+    width: 55%;
+    height: 509px;
+    padding: 0;
+    background-image: url(../img/map-preview.png);
+    background-position: center center;
 }
 .contacts__text {
     padding: 15px 30px;
