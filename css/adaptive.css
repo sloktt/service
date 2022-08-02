@@ -208,7 +208,6 @@
 @media (max-width: 705px){
     .videos__items{
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 25px;
     }
 }
 
